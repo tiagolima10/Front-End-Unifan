@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(209, 209, 209);
+}
+
+.header-container {
+    height: 100vh;
+    width: auto;
+    background-color: rgb(0, 0, 0);
+    background-image: url(../img/pexels-pixabay-247676.jpg); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    box-sizing: border-box;
+    padding: 0 112px;
+    position: relative;
+}
+
+.footer {
+    background-color: black;
+    background-image: linear-gradient(to top, black 92%, rgb(231, 231, 231));
+    color: white;
+    padding: 20px;
+    text-align: center;
+    
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-nav {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.footer-nav li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.footer-nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-nav a:hover {
+    text-decoration: underline;
+}
+
+/* Media query para tornar o header responsivo */
+@media screen and (max-width: 600px) {
+    .header-container {
+        padding: 0 20px;
+        color: rgb(209, 209, 209);
+    }
+}
+
+h1 {
+    font-size: 3.5em;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+h2{
+    font-size: 1.4em;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.social-media{
+    margin-top: 1rem;
+    display: flex;
+}
+
+.social-media a {
+    background-color: rgba(0, 0, 0, 0.74);
+    text-decoration: none;
+    font-size: 1.2em;
+    color: rgb(209, 209, 209);
+    font-weight: bold;
+    padding: 1rem 4rem;
+    border: 1px solid rgb(209, 209, 209);
+    min-width: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s ease-in-out;
+}
+
+/* Media query para tornar a classe .social-media responsiva */
+@media screen and (max-width: 600px) {
+    .social-media {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .social-media a {
+        margin: 0.5rem;
+        padding: 0.5rem 2rem;
+        color: rgb(209, 209, 209);
+        border-color: rgb(209, 209, 209);
+    }
+}
+
+a:hover {
+    background-color: black;
+    color: rgb(209, 209, 209);
+}
+
+ #sobre {
+    background-color: rgb(231, 231, 231);
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end; /* Alterado para "flex-end" */
+    align-items: flex-start;
+    position: fixed; /* Alterado para "fixed" */
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 999; /* Adicionado para definir a ordem de empilhamento */
+    cursor: pointer;
+    transition: 400ms ease-in-out 0s;
+ }
+
+ #sobre > a {
+    color: #000000;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition-duration: 500ms;
+ }
+
+ #sobre > a:hover {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+    #sobre {
+        position: static; /* Alterado para "static" */
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding: 20px;
+        }
+
+        #sobre > a {
+        margin-bottom: 10px;
+        }
+
+    #sobre > a:hover {
+        background-color: transparent;
+        color: rgb(0, 0, 0);
+    }
+}
+
+ #ger:hover {
+    background-color: rgb(231, 231, 231);
+ }
+
+ #copa-selector:hover {
+    background-color: rgb(231, 231, 231);
+ }
+
+nav {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    transition: 400ms ease-in-out 0s;
+}
+
+nav > a {
+    color: rgb(209, 209, 209);
+    font-size: 1.3em;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 500ms;
+}
+
+nav > a:hover {
+    background-color: rgb(209, 209, 209);
+    color: black;
+}
+
+/* Media query para tornar a navegação responsiva */
+@media screen and (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    nav > a {
+        color: #b6b6b6;
+        margin-bottom: 10px;
+    }
+}
+
+/*CARDS CENTRAIS*/
+
+.container {
+    background-color: white;
+    background-image: linear-gradient(to top, rgb(231, 231, 231) 99%, black);
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.card {
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.904);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: grayscale(0.5);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    margin-top: 3rem;
+}
+
+.card2 {
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.904);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#dra-bruna {
+    background-image: url(../img/BrunaPivatto.png);
+}
+
+#copa-do-mundo {
+    background-image: url(../img/zoomnet.png);
+}
+
+#selectors-cut{
+    background-image: url(../img/ivss.png);
+    margin-bottom: 3rem;
+}
+
+#foto-perfil {
+    background-image: url(./img/foto-perfil-red.jpeg);
+}
+
+.card-text{
+    width: 50%;
+    letter-spacing: 1px;
+    color: rgb(0, 0, 0);
+    text-align: justify;
+}
+
+.card-text2{
+    width: 60%;
+    letter-spacing: 1px;
+    color: rgb(255, 255, 255);
+    text-align: justify;
+    margin-bottom: 35px;
+}
+
+.card-wrapper{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.card-wrapper::before {
+    content: '';
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    display: block;
+    border: 1px solid #000000;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.card-wrapper h2 {
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.card-wrapper p {
+    font-size: 0;
+    text-decoration: underline;
+    visibility: visible;
+    opacity: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.5s ease-in-out;
+}
+
+.card:hover {
+    filter: unset;
+}
+
+#copa:hover {
+    color: rgb(209, 209, 209);
+}
+
+#selector:hover {
+    color: rgb(0, 0, 0);
+}
+
+.card:hover > .card-wrapper::before {
+    width: 250px;
+    height: 250px;
+    opacity: 1;
+}
+
+.card:hover > .card-wrapper p{
+    opacity: 1;
+    visibility: visible;
+    font-size: 14px;
+}
+
+/* SETA PARA VOLTAR AO INÍCIO */
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+
+#scroll-to-top-button {
+  display: none;
+  width: 40px;
+  height: 40px;
+  color: #FFF;
+  text-align: center;
+  font-size: 40px;
+  line-height: 40px;
+  text-decoration: none;
+  border-radius: 50%;
+  background-color: rgb(85, 85, 85);
+}
+
+#scroll-to-top-button:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in-out;
+}
